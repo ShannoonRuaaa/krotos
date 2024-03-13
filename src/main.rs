@@ -85,7 +85,7 @@ fn main() {
          //      prevy = y as f32 + height;
          //      ; // Convert sample to f32 for y-coordinate
          //   }
-            for i in 0..drawings.len()-2{
+            for i in (0..drawings.len()-2).step_by(2){
                 let x = i as f32 * width as f32; // Convert to f32 for accurate positioning
                 let y = screen_height / 2; // Convert sample to f32 for y-coordinate
                 let height0 = drawings[i] as f32 / 50.0;
